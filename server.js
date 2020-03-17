@@ -26,7 +26,7 @@ function isAgentAuthenticated(req) {
     return Boolean(req.query.agent);
 }
 
-app.get('/chatBot',  function(req, res) {
+app.post('/chatBot',  function(req, res) {
     if (!isUserAuthenticated(req)) {
         res.status(403).send();
         return;
