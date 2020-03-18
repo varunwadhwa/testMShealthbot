@@ -17,7 +17,6 @@ html, body {
   display: none;
   border-width: 2px;
   border-style: inset;
-  color: red!important;
 }
 
 #botContainer.wc-display {
@@ -39,11 +38,21 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   font-family: "Segoe UI", sans-serif;
   font-size: 15px; }
 
+/*added by varun*/ 
+  .wc-app button {
+    border-color: rgb(81, 100, 251) !important;
+    color: rgb(81, 100, 251) !important;
+    border-radius: 20px !important;
+    background: white !important;
+    border: 1px solid #1aabed !important;
+    color: #1aabed !important;
+  }
+
 .wc-app button {
-  background-color: #0078d7;
+  /*background-color: #0078d7;
   border: 1px solid #cccccc;
   border-radius: 1px;
-  color: #ffffff;
+  color: #ffffff;*//*commented by varun*/
   cursor: pointer;
   transition: color .2s ease, background-color .2s ease; }
 
@@ -115,16 +124,38 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
       display: inline-block;
       margin: 2px;
       max-width: 40%; }
+
+       /*added by varun*/ 
       .wc-suggested-actions .wc-hscroll > ul > li button {
-        background-color: #fff;
-        color: #0078d7;
+        border-color: rgb(81, 100, 251) !important;
+        color: rgb(81, 100, 251) !important;
+        border-radius: 20px !important;
+        background: white !important;
+        border: 1px solid #1aabed !important;
+        color: #1aabed !important;
+      }
+
+      .wc-suggested-actions .wc-hscroll > ul > li button {
+        /*removed by varun*/
+        /*background-color: #fff;
+        color: #0078d7;*/
         min-height: 32px;
         overflow: hidden;
         padding: 0 16px;
         text-overflow: ellipsis;
         white-space: nowrap;
         width: 100%; }
-      .wc-suggested-actions .wc-hscroll > ul > li button:focus,
+
+        /*added by varun*/
+        .wc-suggested-actions .wc-hscroll > ul > li button:focus,
+        .wc-suggested-actions .wc-hscroll > ul > li button:hover,
+        .wc-suggested-actions .wc-hscroll > ul > li button:active {
+          background-color: #5164fb !important; 
+          color: #ffffff !important;
+        }
+
+      /*removed by varun*/  
+      /*.wc-suggested-actions .wc-hscroll > ul > li button:focus,
       .wc-suggested-actions .wc-hscroll > ul > li button:hover {
         background-color: #fff;
         border-color: #0078d7;
@@ -132,7 +163,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
       .wc-suggested-actions .wc-hscroll > ul > li button:active {
         background-color: #0078d7;
         border-color: #0078d7;
-        color: #ffffff; }
+        color: #ffffff; }*/
   .wc-suggested-actions button.scroll {
     background-color: #d2dde5;
     height: 40px;
@@ -218,7 +249,6 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   padding: 8px;
   word-break: break-word; 
-  background: red!important;
 }
 
 .wc-message-content.selected {
@@ -249,22 +279,44 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   background-color: #ffffff; }
   .wc-card .non-adaptive-content {
     margin: 8px 8px 0 8px; }
+
+/*added by varun*/
+    .wc-card button {
+      border-color: rgb(81, 100, 251) !important;
+      color: rgb(81, 100, 251) !important;
+      border-radius: 20px !important;
+      background: white !important;
+      border: 1px solid #1aabed !important;
+      color: #1aabed !important;
+    }
+
   .wc-card button {
-    background-color: transparent;
-    color: #0078d7;
+    /* removed by varun*/
+    /*background-color: transparent;
+    color: #0078d7;*/
     min-height: 32px;
     width: 100%;
     padding: 0 16px;
     overflow: auto !important;
     white-space: normal !important; }
-  .wc-card button:hover {
+
+  /*added by varun*/  
+  .wc-card button:hover,
+  .wc-card button:active{  
+    background-color: #5164fb !important; 
+    color: #ffffff !important;
+  }
+
+  /*removed by varun*/
+  /*.wc-card button:hover {
     background-color: transparent;
     border-color: #0078d7;
     color: #0078d7; }
   .wc-card button:active {
     background-color: #0078d7;
     border-color: #0078d7;
-    color: #ffffff; }
+    color: #ffffff; }*/
+    
   .wc-card.receipt table {
     border-collapse: collapse;
     width: 100%; }
