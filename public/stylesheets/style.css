@@ -34,7 +34,7 @@ html, body {
 }
 
 /* reset */
-body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
+body .wc-app, .wc-app button, .wc-app input, .wc-app textarea { 
   font-family: "Segoe UI", sans-serif;
   font-size: 15px; }
 
@@ -44,8 +44,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
     color: rgb(81, 100, 251) !important;
     border-radius: 20px !important;
     background: white !important;
-    border: 1px solid #1aabed !important;
-    color: #1aabed !important;
+    border: 1px solid;
   }
 
 .wc-app button {
@@ -131,8 +130,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
         color: rgb(81, 100, 251) !important;
         border-radius: 20px !important;
         background: white !important;
-        border: 1px solid #1aabed !important;
-        color: #1aabed !important;
+        border: 1px solid;
       }
 
       .wc-suggested-actions .wc-hscroll > ul > li button {
@@ -286,8 +284,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
       color: rgb(81, 100, 251) !important;
       border-radius: 20px !important;
       background: white !important;
-      border: 1px solid #1aabed !important;
-      color: #1aabed !important;
+      border: 1px solid;
     }
 
   .wc-card button {
@@ -316,7 +313,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
     background-color: #0078d7;
     border-color: #0078d7;
     color: #ffffff; }*/
-    
+
   .wc-card.receipt table {
     border-collapse: collapse;
     width: 100%; }
