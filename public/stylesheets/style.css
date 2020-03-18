@@ -35,7 +35,10 @@ html, body {
 
 /* reset */
 body .wc-app, .wc-app button, .wc-app input, .wc-app textarea { 
-  font-family: "Segoe UI", sans-serif;
+  /*removed by varun*/
+  /*font-family: "Segoe UI", sans-serif;*/
+  /*added by varun*/
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 15px; }
 
 /*added by varun*/ 
