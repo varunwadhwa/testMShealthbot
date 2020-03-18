@@ -492,9 +492,15 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   float: left;
   margin-left: 8px; }
 
-.wc-message-from-bot .wc-message-content {
+/*removed by varun*/
+/*.wc-message-from-bot .wc-message-content {
   background-color: #eceff1;
-  color: #000000; }
+  color: #000000; }*/
+  
+.wc-message-from-bot .wc-message-content {
+  background-color: #f6f6f6;
+  border-radius: 0 20px 20px 0;  
+}
 
 .wc-message-from-bot svg.wc-message-callout path {
   fill: #eceff1; }
