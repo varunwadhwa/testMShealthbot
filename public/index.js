@@ -80,20 +80,20 @@ function initBotConversation() {
     */
 
     // Use the following activity to proactively invoke a bot scenario. 
-    /*
+    
     botConnection.postActivity({
         type: "invoke",
         value: {
-            trigger: "{scenario}",
-            args: {
+            trigger: "coronavirus"
+            /*args: {
                 myVar1: "{custom_arg_1}",
                 myVar2: "{custom_arg_2}"
-            }
+            }*/
         },
         from: user,
         name: "TriggerScenario"
     }).subscribe(function(id) {});
-    */
+    
 
     botConnection.activity$
         .filter(function (activity) {return activity.type === "event" && activity.name === "shareLocation"})
